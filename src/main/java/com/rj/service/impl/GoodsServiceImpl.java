@@ -37,8 +37,8 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public Goods remove(Integer id) {
-        Goods goods = goodsMapper.remove(id);
-        return goods;
+    public Boolean remove(Integer id) {
+        Boolean flag = goodsMapper.remove(id);
+        return flag;
     }
 }

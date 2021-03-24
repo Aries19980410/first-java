@@ -10,6 +10,6 @@ public interface GoodsMapper {
 
     Goods detail(Integer id);
 
-    Goods remove(Integer id);
+    Boolean remove(Integer id);
 }
 

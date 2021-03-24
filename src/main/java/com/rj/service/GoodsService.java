@@ -10,5 +10,5 @@ GoodsService {
 
     GoodsVO detail(Integer id);
 
-    Goods remove(Integer id);
+    Boolean remove(Integer id);
 }

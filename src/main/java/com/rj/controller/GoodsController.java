@@ -36,8 +36,8 @@ public class GoodsController {
 
     @PostMapping("/good/remove")
     public Result remove(@RequestParam Integer id){
-        Goods reslut = goodsService.remove(id);
-        if (Objects.isNull(reslut)){
+        Boolean reslut = goodsService.remove(id);
+        if (reslut){
             return new Result(true,200,"成功",reslut);
         }
         return new Result(true,500,"失败",reslut);
